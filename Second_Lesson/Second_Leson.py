@@ -22,8 +22,17 @@
 # print("Summ", a+b, "\nDiference", a-b, "\nProduction", a*b, "\nDivision", a/b)
 # if a > b:
 #     print("Max ", a, ", Min", b)
-# elif a < b:
+# elif a < b:22
 #     print("Max", b, ", Min", a)
 # else:
 #     print("a = b")
 # print("Average number ", (a+b)/2)
+a = int(input("Enter hour: "))
+if a >= 0 and a <= 6:
+    print("Good night")
+elif a > 6 and a <= 13:
+    print("Good morning")
+elif a > 13 and a <= 17:
+    print("Good day")
+elif a > 17 and a <= 23:
+    print("Good evening")
