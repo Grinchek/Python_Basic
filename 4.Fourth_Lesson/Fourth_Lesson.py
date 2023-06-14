@@ -29,5 +29,53 @@ while exit != True:
         print(f"You earn {int (money / 36.57)} usd")
     elif choise ==0:
         exit=True'''
+'''a = int(input("Enter start of range: "))
+b = int(input("Enter end of range: "))
+ex = False
+while ex == False:
+    c = int(input("Enter your number: "))
+    if c >=a and c <=b:
+        for var in range(a,b+1):
+            ex = True
+            if var == c:
+                print(f"!{var}!", end=" ")
+            else:
+                print(var, end=" ")  
+    else:
+        print("Out of range.")'''
+'''import random
+x = random.randint(1,500)
+ex = False
+tryes = 10
+while ex == False and tryes > 0:
+    u = int(input(f"Gues the number(you have {tryes} tryes): "))
+    if u == x:
+        print(f"You win! The guessed number is {u} ")
+        ex = True
+    elif u < x and tryes > 1:
+        print("Ops... Sims like you have try some larger number")
+        tryes -=1
+    elif u > x and tryes > 1:
+        print("Ops... Sims like you have try some smaler number")
+        tryes -=1
+    else:
+        print("You lose :(")
+        ex =True'''
+'''my_list = []
+ex = False
+counter = 0
+while ex ==False:
+    ch=int(input("1. Add element to list.\n0. Exit\n"))
+    if ch == 0:
+        ex = True
+    elif ch == 1:
+        my_list.append(int(input("Enter new element: ")))
+    else:
+        print("Wrong choise.")
+chsec=int(input("Enter wanted number.\n"))
+for var in range(len(my_list)):
+    if chsec == my_list[var]:
+        counter +=1
+print(f"Your number repeated {counter} times.")'''
 
     
