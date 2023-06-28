@@ -104,23 +104,23 @@
 # - для знаходження середнього арифметичного елементів масиву
 # - для знаходження максимального елемента масиву в проміжку
 # (між двома вказаними індексами)
-import random
-my_list = []
-my_list.clear
-size = int(input("Size = "))
-def fill(list,size):
-    for i in range(size):
-        my_list.append(random.randint(-12,20))
-def average(lst):
-    return sum(my_list) / len(my_list)
-fill(my_list,size)
-print(my_list)
-print(f"Averange: {average(my_list)}")
-def max_in_range(list):
-    start= int(input("Start: "))
-    end= int(input("End: "))
-    for i in range( my_list[start:end]):
-        if my_list[i]>my_list[i+1]:
-            print(f"Max: {my_list[i]}")
-max_in_range(my_list)
+# import random
+# my_list = []
+# my_list.clear
+# size = int(input("Size = "))
+# def fill(list,size):
+#     for i in range(size):
+#         my_list.append(random.randint(-12,20))
+# def average(lst):
+#     return sum(my_list) / len(my_list)
+# fill(my_list,size)
+# print(my_list)
+# print(f"Averange: {average(my_list)}")
+# def max_in_range(list):
+#     start= int(input("Start: "))
+#     end= int(input("End: "))
+#     for i in range( my_list[start:end]):
+#         if my_list[i]>my_list[i+1]:
+#             print(f"Max: {my_list[i]}")
+# max_in_range(my_list)
 
