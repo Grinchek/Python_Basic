@@ -34,6 +34,6 @@ while ex !=False:
         print(my_dictionary)
     elif action==2:
         us_value = input("Enter value: ")
-        for value in my_dictionary:
+        for key in my_dictionary:
             if us_value == value:
-                print(value)
+                print(key)
